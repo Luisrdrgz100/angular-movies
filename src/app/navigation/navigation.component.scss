@@ -1,0 +1,17 @@
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 2em;
+    background: #456;
+    a{
+        color: white;
+        margin: 0.1 em;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-size: bold;
+    }
+    .active{
+        color: black;
+    }
+}
