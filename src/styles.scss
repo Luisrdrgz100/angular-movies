@@ -9,3 +9,11 @@ body{
 html, body{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+.main{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    :nth-child(2){
+        flex: 1;
+    }
+}

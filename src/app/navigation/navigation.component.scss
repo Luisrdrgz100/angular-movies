@@ -3,7 +3,7 @@ nav{
     flex-direction: row;
     justify-content: space-around;
     padding: 2em;
-    background: #456;
+    background: rgb(97, 37, 57);
     a{
         color: white;
         margin: 0.1 em;
@@ -13,5 +13,6 @@ nav{
     }
     .active{
         color: black;
+        cursor: text;
     }
 }
