@@ -2,6 +2,7 @@ nav{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    flex-wrap: wrap;
     padding: 2em;
     background: rgb(97, 37, 57);
     a{
@@ -14,5 +15,20 @@ nav{
     .active{
         color: black;
         cursor: text;
+    }
+    .search{
+        height: 2.2em;
+        input{
+            height: 100%;
+            border-radius: 0.8em;
+            padding: 0.3em;
+            &:focus{
+                border: 2px solid black;
+                outline: none;
+            }
+        }
+        button{
+            height: 100%;
+        }
     }
 }

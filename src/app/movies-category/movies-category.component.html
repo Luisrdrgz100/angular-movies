@@ -3,6 +3,7 @@
     {{this.category | uppercase}} MOVIES
   </h1>
   <div class="movies">
-
+        <app-movie-list [filmsArray]="movies" ></app-movie-list>
   </div>
 </section>
+<button (click)="moreMovies()"> More movies </button>

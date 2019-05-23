@@ -1,0 +1,35 @@
+.movieDetail{
+    position: relative;
+    // width: 400px;
+    // height: 520px;
+    margin: 0 auto;
+    padding:10px;
+    margin-top: 20px;
+    display: flex;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-wrap: wrap;
+    &::before{
+        contain: 'hola';
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+    }
+    .detailImage{
+        background-color: beige;
+    }
+    .detailDescription{
+        color:white;
+
+        .genres span{
+        background-color: black;
+        color:white;
+        border-radius: 10px;
+        padding: 0.5em;
+        margin: 0.4em;
+        }
+    }
+}

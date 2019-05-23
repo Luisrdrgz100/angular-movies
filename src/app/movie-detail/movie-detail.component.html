@@ -1,3 +1,22 @@
-<p>
-  movie-detail works!
-</p>
+<h2 *ngIf="!this.movie">Cargando....</h2>
+ <section class="movieDetail" *ngIf="this.movie" 
+ [ngStyle]="{'background-image': 'url(https://image.tmdb.org/t/p/w500'+ movie.backdrop_path +')'}">
+    <div class="detailImage">
+            <img src="https://image.tmdb.org/t/p/w500/{{this.movie.poster_path}}">
+    </div>
+    <div class="detailDescription">
+        <div class="genres">
+            <span *ngFor="let genre of movie.genres">{{genre.name}}</span>
+        </div>
+            <h1>{{ this.movie.original_title | uppercase}}</h1>
+            <h3>{{ this.movie.overview}}</h3>
+            <h4>{{movie.release_date}}</h4>
+            <h5>{{ this.movie.homepage}}</h5>
+
+    </div>
+</section>
+<div class="movieSimilar">
+<app-movie-list [filmsArray]="movieSimilar"></app-movie-list>
+</div>
+
+
