@@ -10,6 +10,7 @@
     background-repeat: no-repeat;
     display: flex;
     flex-wrap: wrap;
+    background-color: rgb(151, 214, 211);
     &::before{
         contain: 'hola';
         position: absolute;
@@ -18,11 +19,13 @@
         right: 0;
         bottom: 0;
     }
-    .detailImage{
-        background-color: beige;
+
+    img{
+        width: 90%;
     }
     .detailDescription{
         color:white;
+        padding: 0.5em;
 
         .genres span{
         background-color: black;

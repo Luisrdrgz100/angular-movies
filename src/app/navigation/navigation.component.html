@@ -1,7 +1,7 @@
 <nav>
-  <a routerLink="/movies/popular" routerLinkActive="active">popular</a>
-  <a routerLink="/movies/top_rated" routerLinkActive="active">top rated</a>
-  <a routerLink="/movies/upcoming" routerLinkActive="active">upcoming</a>
+  <a routerLink="/movies/popular" routerLinkActive="active"><span>popular</span></a>
+  <a routerLink="/movies/top_rated" routerLinkActive="active"><span>top rated</span></a>
+  <a routerLink="/movies/upcoming" routerLinkActive="active"><span>upcoming</span></a>
   <div class="search">
       <input type="text" name="search" placeholder="Search" [(ngModel)]="query">
       <a routerLink="/search/{{query}}" routerLinkActive="active" (click)="searchMovies()">Search</a>

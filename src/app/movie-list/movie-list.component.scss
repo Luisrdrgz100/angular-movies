@@ -2,13 +2,17 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     justify-content: center;
+    align-self: center;
     grid-gap: 1em;
+    a{
+        text-decoration: none;
+    }
 
     .card-detail{
         position: relative;
         height: 200px;
         width: 260px;
-        border: 1px solid black;
+        align-self: center;
         padding: 0.2em;
         margin: 0.6em;
         background-size: cover;
